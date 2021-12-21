@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.7.5 on win32)" generated="20211213 18:19:31.957" rpa="true" schemaversion="2">
+<suite id="s1" name="Tasks" source="c:\Users\olaya\OneDrive\Desktop\my-rbs-robot\tasks.robot">
+<test id="s1-t1" name="Log in">
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>username</arg>
+<arg>maria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211213 18:19:33.375" level="INFO">Typing text 'maria' into text field 'username'.</msg>
+<kw name="Capture Page Screenshot" library="RPA.Browser.Selenium">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211213 18:19:33.377" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20211213 18:19:33.376" endtime="20211213 18:19:33.378"/>
+</kw>
+<msg timestamp="20211213 18:19:33.383" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20211213 18:19:33.372" endtime="20211213 18:19:33.384"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser.Selenium">
+<arg>password</arg>
+<arg>thoushallnotpass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211213 18:19:33.385" endtime="20211213 18:19:33.386"/>
+</kw>
+<kw name="Submit Form" library="RPA.Browser.Selenium">
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211213 18:19:33.387" endtime="20211213 18:19:33.387"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
+<arg>id:sales-form</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20211213 18:19:33.388" endtime="20211213 18:19:33.389"/>
+</kw>
+<status status="FAIL" starttime="20211213 18:19:33.366" endtime="20211213 18:19:33.391">No browser is open.</status>
+</test>
+<doc>Insert the sales data for the week and export it as a PDF.</doc>
+<status status="FAIL" starttime="20211213 18:19:31.967" endtime="20211213 18:19:33.416"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
